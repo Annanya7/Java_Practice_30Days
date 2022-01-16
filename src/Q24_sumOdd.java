@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Q24_sumOdd
 {
     public static void calSumOdd(int num) {
-        int i, j;
+        int i;
         int sum = 0;
         for (i = 1; i <= num; i++) {
             if (i % 2 != 0) {
