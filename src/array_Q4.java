@@ -10,8 +10,8 @@ public class array_Q4 // why array index out of bound ????
     public static void main(String[] args) throws IOException
     {
         int i;
-        int[] arr={1,2,4,7};
-        for(i=0;i<arr.length;i++)
+        int[] arr={1,5,4,7};
+        for(i=0;i<arr.length-1;i++)
         {
             if(arr[i]<arr[i+1])
             {
@@ -27,6 +27,6 @@ public class array_Q4 // why array index out of bound ????
         {
             System.out.println(arr[i]);
         }
-        System.out.println("Ascending order");
+       // System.out.println("Ascending order");
     }
 }
