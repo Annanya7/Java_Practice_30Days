@@ -3,7 +3,7 @@ public class string_count_words
 {
     public static void main(String[] args)
     {
-        String str ="Amira is a good girl";
+        String str ="Amira  is is a good girl";
         int i;
         String split[] = str.split(" ");
         System.out.println(split);
