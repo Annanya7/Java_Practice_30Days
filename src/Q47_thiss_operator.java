@@ -8,6 +8,7 @@ public class Q47_thiss_operator {
         this.id = id;
         this.name = name;
         this.fees = fees;
+        display();
     }
     void display()
     {
@@ -19,6 +20,6 @@ public class Q47_thiss_operator {
     {
         Q47_thiss_operator obj1 = new Q47_thiss_operator();
         obj1.get(101,"abc",3000);
-        obj1.display();
+       // obj1.display();
     }
 }
