@@ -5,4 +5,9 @@ public class xyz {
     {
         System.out.println("we are in xyz");
     }
+
+    public static void main(String[] args) {
+        def obj = new def();
+        obj.display();
+    }
 }
