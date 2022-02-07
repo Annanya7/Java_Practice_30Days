@@ -1,0 +1,36 @@
+public class Q50_mutilevel_inheritance
+{
+    void disp()
+    {
+        System.out.println("in first class ");
+    }
+
+}
+ class B extends Q50_mutilevel_inheritance
+{
+     void show()
+    {
+        System.out.println("in second class");
+    }
+
+
+}
+class c extends B
+{
+    void show()
+    {
+        super.show();
+        System.out.println("in class c ");
+    }
+
+}
+class result
+{
+    public static void main(String[] args)
+    {
+        c obj = new c();
+        obj.show();
+        //super.show();
+        // why protected show will not be accessible?
+    }
+}
