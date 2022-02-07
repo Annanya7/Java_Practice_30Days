@@ -18,7 +18,7 @@ class derived extends Q51_super_constructor
         System.out.println("parameters = " + (x + y));
     }
 }
-class Result
+class result
 {
     public static void main(String[] args)
     {

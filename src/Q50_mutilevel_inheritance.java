@@ -1,6 +1,6 @@
 public class Q50_mutilevel_inheritance
 {
-    void disp()
+    void show()
     {
         System.out.println("in first class ");
     }
@@ -8,8 +8,9 @@ public class Q50_mutilevel_inheritance
 }
  class B extends Q50_mutilevel_inheritance
 {
-     void show()
+     void dis()
     {
+
         System.out.println("in second class");
     }
 
@@ -24,7 +25,7 @@ class c extends B
     }
 
 }
-class result
+class Result1
 {
     public static void main(String[] args)
     {
