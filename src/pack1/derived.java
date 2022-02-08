@@ -2,6 +2,7 @@ package pack1;
 
 public class derived extends base{
     int fees;
+
     void get(int f)
     {
         System.out.println("derived");
@@ -13,4 +14,8 @@ public class derived extends base{
         System.out.println("name = "+name);
         System.out.println("fees ="+fees);
     }
+    //void show()
+    //{
+        //System.out.println("derived");
+    //}
 }
