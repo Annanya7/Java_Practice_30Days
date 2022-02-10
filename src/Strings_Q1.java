@@ -1,4 +1,6 @@
 import java.lang.*;
+import java.util.Locale;
+
 public class Strings_Q1
 {
     public static void main(String args[]) {
@@ -14,7 +16,12 @@ public class Strings_Q1
         System.out.println(s6.equalsIgnoreCase(s1));
         System.out.println(s1.substring(2,5));
         System.out.println(s1.length());
+        s1.concat("web");
         System.out.println(s1.substring(s1.length()-1));
+        System.out.println(Character.isUpperCase('a'));
+        System.out.println(s1.concat("web"));
+        s1 = s1.toUpperCase();
+        System.out.println(s1);
 
 
     }
