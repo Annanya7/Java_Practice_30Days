@@ -19,6 +19,7 @@ public class Q44_sum_objPassing_asarg
       void sum( Q44_sum_objPassing_asarg s1 , Q44_sum_objPassing_asarg s2)
       {
            a = s1.a + s2.a;
+           s2.a=90;
            b = s1.b + s2.b;
       }
 
@@ -32,7 +33,8 @@ public class Q44_sum_objPassing_asarg
         obj1.disp();
         obj2.sum(obj , obj1);
         obj2.disp(); //15, 30
-
+        obj1.disp();
+        obj1.disp();
 
     }
 }

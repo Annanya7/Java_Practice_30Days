@@ -23,6 +23,5 @@ public class Strings_Q1
         s1 = s1.toUpperCase();
         System.out.println(s1);
 
-
     }
 }
