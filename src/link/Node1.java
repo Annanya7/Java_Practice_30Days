@@ -3,7 +3,7 @@ import java.util.*;
 public class Node1 {
     int data;
     Node1 link;
-
+static int count=0;
     Node1(int d) {
         data = d;
     }
@@ -15,24 +15,28 @@ public class Node1 {
         new1.link = null;
         if (n1 == null) {
             n1 = new1;
-        } else {
+            count++;
+        }
+        else
+        {
             new1.link = n1;
             n1 = new1;
+            count++;
         }
         return n1;
     }
-    static Node1 delete(Node1 n11,Node1 n2)
+    static Node1 insert_end(Node1 n1 , int elem)
     {
-        Node1 save = n11; // start
-        Node1 next = n2; // null
-        Node1 en = null;
-        while(next!= null)
+        Node1 save = n1;
+        Node1 new2 = new Node1(elem);
+        new2.link = null;
+        while(save.link != null)
         {
-            next = next.link;
             save= save.link;
         }
-        en = save;
-        return en;
+        save.link=new2;
+        count++;
+        return n1;
     }
 
     static void disp(Node1 n1) {
@@ -42,18 +46,15 @@ public class Node1 {
             System.out.println(list.data);
             list = list.link;
         }
-
+        System.out.println("no of nodes = "+count);
     }
 
 
     public static void main(String[] args) {
         Node1 start = null;
-        Node1 end = null;
         start=insert(start,89);
-        end= delete(start,end);
+        start=insert_end(start,30);
         disp(start);
 
     }
-// insertion at end code
-
 }
