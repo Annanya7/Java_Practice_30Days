@@ -21,6 +21,19 @@ public class Node1 {
         }
         return n1;
     }
+    static Node1 delete(Node1 n11,Node1 n2)
+    {
+        Node1 save = n11; // start
+        Node1 next = n2; // null
+        Node1 en = null;
+        while(next!= null)
+        {
+            next = next.link;
+            save= save.link;
+        }
+        en = save;
+        return en;
+    }
 
     static void disp(Node1 n1) {
         // create a new node for displaying the objects
@@ -35,7 +48,9 @@ public class Node1 {
 
     public static void main(String[] args) {
         Node1 start = null;
+        Node1 end = null;
         start=insert(start,89);
+        end= delete(start,end);
         disp(start);
 
     }
