@@ -13,6 +13,7 @@ public class unique_char_Using_sets
             System.out.println(ch[i] + "\t"); // printing the character array
         }
         System.out.println(" ");
+        // creating a hashset as it doesnt take duplicate values
         HashSet<Character> hs = new HashSet<>();
         for(char i : ch)
         {
@@ -24,6 +25,7 @@ public class unique_char_Using_sets
         }
         String str =hs.toString();
         System.out.println(str);
+        // comparing the size of hashset with the original length of character array s
         if(hs.size()==len)
         {
             System.out.println("No duplicates ");
