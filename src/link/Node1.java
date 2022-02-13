@@ -58,3 +58,4 @@ static int count=0;
 
     }
 }
+// insertion in sorted list find location only element given.
