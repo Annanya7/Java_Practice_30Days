@@ -73,17 +73,10 @@ public class node {
                 ptr = ptr.next;
             i++;
             }
-
-
             save.next = ptr.next;
-
         }
         return n1;
-
     }
-
-
-
     static node delete_element(node n1,int ele) {
         node ptr = n1;
         node save = null;
