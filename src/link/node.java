@@ -52,6 +52,28 @@ public class node {
         return n1;
 
     }
+
+
+    static node delete_loc(node n1,int ind) {
+        if(ind>count)
+        {
+            System.out.println("deletion not possible");
+        }
+        else {
+            int i = 1;
+
+            node ptr = n1;
+            node save = null;
+            while (i < ind) {
+                save = ptr;
+                ptr = ptr.next;
+            i++;
+            }
+            save.next = ptr.next;
+        }
+        return n1;
+
+    }
 static void dis(node n1)
         {
             node list = n1;
@@ -73,6 +95,7 @@ static void dis(node n1)
            System.out.println("press 1 for inserting");
            System.out.println("press 2 for display");
            System.out.println("press 3 for insertion at given location");
+           System.out.println("press 4 for deletion ");
            System.out.println("enter your choice");
            choice1 = sc.nextInt();
            switch(choice1) {
@@ -91,6 +114,12 @@ static void dis(node n1)
                    System.out.println("at position");
                    int pos = sc.nextInt();
                    start = insert_loc(start,item,pos);
+                   break;
+               case 4:
+                   int loc;
+                   System.out.println("enter location");
+                   loc = sc.nextInt();
+                   start = delete_loc(start,loc);
                    break;
                default:
                    System.out.println("enter valid choice");

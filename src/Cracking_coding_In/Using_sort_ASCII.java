@@ -11,7 +11,7 @@ public class Using_sort_ASCII
         int len = str.length();
         //Sorting the character array
         Arrays.sort(ch_array);
-        for(i=0;i<len;i++)
+        for(i=0;i<len-1;i++)
         {
             if(ch_array[i] != ch_array[i+1])
             {
