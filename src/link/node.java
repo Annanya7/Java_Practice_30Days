@@ -68,7 +68,8 @@ public class node {
 
             node ptr = n1;
             node save = null;
-            while (i < ind) {
+            while (i < ind)
+            {
                 save = ptr;
                 ptr = ptr.next;
             i++;
