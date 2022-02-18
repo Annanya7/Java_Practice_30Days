@@ -1,6 +1,6 @@
 package pack2;
 
-public class throwtest {
+public class test {
     public static void checkNum(int num) {
         if (num < 1) {
             throw new ArithmeticException("Number is negative, cannot calculate square");
@@ -10,10 +10,16 @@ public class throwtest {
         }
     }
     //main method
-    public static void main(String[] args)
+    public static void main(String args[])
     {
-        throwtest obj = new throwtest();
-        obj.checkNum(3);
+        test obj = new test();
+        try {
+            obj.checkNum(-3);
+        }
+        catch (Exception e)
+        {
+            System.out.println("handled");
+        }
         System.out.println("Rest of the code..");
     }
 
