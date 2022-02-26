@@ -10,7 +10,7 @@ public class stack1
         top = -1;
         max =5;
     }
-  void insert(int item)
+    void insert(int item)
   {
       if(top>=max)
       {
